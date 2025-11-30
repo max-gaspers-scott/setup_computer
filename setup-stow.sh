@@ -1,3 +1,3 @@
-!#/bin/sh
-
-yay -S --noconfirm --needed stow
+#!/bin/sh
+sudo pacman --noconfirm --needed -S stow
+# yay -S --noconfirm --needed stow

@@ -1,2 +1,2 @@
 #!/bin/sh
-gh repo clone kanata
+git clone https://github.com/max-gaspers-scott/kanata.git

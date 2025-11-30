@@ -1,5 +1,4 @@
-!#/bin/sh
-. ./setup-calcure.sh
+#!/bin/sh
 . ./setup-croc.sh
 . ./setup-gdisk.sh
 . ./setup-jrnl.sh
