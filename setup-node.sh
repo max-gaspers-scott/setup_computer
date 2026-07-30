@@ -1,5 +1,5 @@
 #!/bin/sh
 
-sudo pacman -S nodejs npm
+sudo pacman -S --noconfirm --needed nodejs npm
 
 
