@@ -14,6 +14,7 @@
 . ./setup-node.sh
 . ./setup-pomodoro.sh
 . ./spell.sh
+. ./sqlx.sh
 # . ./setup-goose.sh # uncomment to install goose
 # . .setup-uv.sh # takes a while
 # . ./cargo-binstall.sh
