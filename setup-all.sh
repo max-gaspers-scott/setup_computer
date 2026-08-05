@@ -18,3 +18,4 @@
 # . ./setup-goose.sh # uncomment to install goose
 # . .setup-uv.sh # takes a while
 # . ./cargo-binstall.sh
+# . ./java.sh
