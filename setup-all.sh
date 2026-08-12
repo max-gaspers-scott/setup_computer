@@ -15,6 +15,8 @@
 . ./setup-pomodoro.sh
 . ./spell.sh
 . ./sqlx.sh
+. ./asciiquarium.sh
+. ./nyancat.sh
 # . ./setup-goose.sh # uncomment to install goose
 # . .setup-uv.sh # takes a while
 # . ./cargo-binstall.sh
