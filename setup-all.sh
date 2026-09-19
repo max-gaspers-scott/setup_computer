@@ -1,9 +1,9 @@
 #!/bin/sh
 . ./setup-croc.sh
 . ./setup-gdisk.sh
-# . ./setup-jrnl.sh
+. ./setup-jrnl.sh
 . ./setup-kanata.sh
-# . ./setup-lsof.sh
+. ./setup-lsof.sh
 # . ./setup-qwen.sh
 # . ./setup-rustup.sh # needs work
 . ./setup-stow.sh
@@ -18,6 +18,8 @@
 . ./asciiquarium.sh
 . ./nyancat.sh
 # . ./setup-goose.sh # uncomment to install goose
-# . .setup-uv.sh # takes a while
-# . ./cargo-binstall.sh
-# . ./java.sh
+. .setup-uv.sh # takes a while
+. ./cargo-binstall.sh
+. ./java.sh
+. ./setup-rust-anlizer.sh
+. ./dig.sh
