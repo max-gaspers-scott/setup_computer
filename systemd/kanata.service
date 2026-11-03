@@ -1,0 +1,11 @@
+[Unit]
+Description=Kanata keyboard remapper
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/home/mgs/.cargo/bin/kanata --cfg /home/mgs/setup_computer/kanata/kanata.kbd
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
