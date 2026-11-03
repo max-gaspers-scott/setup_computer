@@ -5,7 +5,7 @@
 . ./setup-kanata.sh
 . ./setup-lsof.sh
 # . ./setup-qwen.sh
-# . ./setup-rustup.sh # needs work
+. ./setup-rustup.sh # needs work
 . ./setup-stow.sh
 . ./setup-tmux.sh
 . ./setup-tt.sh
