@@ -104,3 +104,5 @@ export PATH="/home/mgs/.local/bin:$PATH"
 export PATH=/home/mgs/.kilo/bin:$PATH
 . "$HOME/.cargo/env"
 export PATH="$HOME/.cargo/bin:$PATH"
+
+. "$HOME/.local/share/../bin/env"
