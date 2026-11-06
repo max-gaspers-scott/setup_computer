@@ -1,0 +1,8 @@
+[Unit]
+Description=Sync calendars with vdirsyncer
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/vdirsyncer metasync
+ExecStart=/usr/bin/vdirsyncer sync

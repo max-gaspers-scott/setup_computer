@@ -1,0 +1,23 @@
+# Sync Mail-in-a-Box (Nextcloud) calendars <-> ~/.local/share/calendars
+# Login: max@team-stingray.com (same as mail/himalaya).
+# Password: first line of pass entry "box.team-stingray.com".
+
+[general]
+status_path = "~/.local/share/vdirsyncer/status/"
+
+[pair calendars]
+a = "calendars_local"
+b = "calendars_remote"
+collections = ["from b"]
+metadata = ["color", "displayname"]
+
+[storage calendars_local]
+type = "filesystem"
+path = "~/.local/share/calendars/"
+fileext = ".ics"
+
+[storage calendars_remote]
+type = "caldav"
+url = "https://box.team-stingray.com/cloud/remote.php/dav/"
+username = "max@team-stingray.com"
+password.fetch = ["command", "sh", "-c", "pass show box.team-stingray.com | head -n1"]

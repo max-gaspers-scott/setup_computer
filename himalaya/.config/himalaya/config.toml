@@ -1,8 +1,6 @@
 # Himalaya (v2) config for Mail-in-a-Box at box.team-stingray.com
-# Password comes from the same pass entry vdirsyncer uses, "box.team-stingray.com":
-#   line 1:  <password>
-#   another line:  user: max@team-stingray.com
-# Create it with:  pass insert -m box.team-stingray.com
+# Password: first line of pass entry "box.team-stingray.com" (shared with vdirsyncer).
+# Create it with:  pass insert box.team-stingray.com
 
 display-name = "Maximillian Gaspers Scott"
 downloads-dir = "~/Downloads"

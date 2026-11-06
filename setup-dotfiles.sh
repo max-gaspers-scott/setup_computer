@@ -8,7 +8,7 @@
 setup_dotfiles() {
     local repo_dir
     repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    local packages=(bash hypr nvim himalaya)
+    local packages=(bash hypr nvim khal vdirsyncer himalaya)
     local backup_suffix=".bak.$(date +%Y%m%d%H%M%S)"
 
     if ! command -v stow &> /dev/null; then

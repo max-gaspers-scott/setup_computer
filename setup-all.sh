@@ -34,4 +34,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 . ./setup-csv.sh
 . ./email.sh
 . ./viu.sh
+. ./pass.sh
 . ./khal.sh
