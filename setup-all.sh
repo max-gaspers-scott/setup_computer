@@ -31,3 +31,4 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
 # Kanata (needs cargo from setup-rustup.sh): install + enable/start systemd service
 . ./setup-kanata.sh
+. ./setup-csv.sh
