@@ -27,3 +27,6 @@
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, "omarchy-shell shell toggle omarchy.emojis")
+
+-- Rotate the focused screen 90° left; press again to rotate back.
+o.bind("CTRL + SHIFT + R", "Rotate screen", "~/.config/hypr/scripts/rotate-screen.sh")
