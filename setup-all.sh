@@ -6,7 +6,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 . ./setup-jrnl.sh
 . ./setup-lsof.sh
 # . ./setup-qwen.sh
-. ./setup-rustup.sh # needs work
+. ./setup-rustup.sh
+. ./setup-rust-anlizer.sh
 . ./setup-tmux.sh
 . ./setup-tt.sh
 # . ./setup-web-term.sh
@@ -21,7 +22,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 . ./setup-uv.sh
 . ./cargo-binstall.sh
 # . ./java.sh
-# . ./setup-rust-anlizer.sh
 . ./dig.sh
 . ./setup-linode.sh
 
@@ -31,3 +31,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 
 # Kanata (needs cargo from setup-rustup.sh): install + enable/start systemd service
 . ./setup-kanata.sh
+. ./setup-csv.sh
+. ./email.sh
+. ./viu.sh
+. ./pass.sh
+. ./khal.sh
+. ./record-ascii.sh

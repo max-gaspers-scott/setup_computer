@@ -8,7 +8,7 @@
 setup_dotfiles() {
     local repo_dir
     repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    local packages=(bash hypr nvim)
+    local packages=(bash hypr nvim khal vdirsyncer himalaya)
     local backup_suffix=".bak.$(date +%Y%m%d%H%M%S)"
 
     if ! command -v stow &> /dev/null; then
@@ -23,6 +23,10 @@ setup_dotfiles() {
         while IFS= read -r -d '' src; do
             local rel="${src#"$repo_dir/$pkg/"}"
             local dest="$HOME/$rel"
+            # Skip if dest already resolves to the repo file (e.g. a parent dir is a stow symlink).
+            if [ "$(realpath "$dest" 2>/dev/null)" = "$(realpath "$src")" ]; then
+                continue
+            fi
             if [ -e "$dest" ] && [ ! -L "$dest" ]; then
                 echo "    backing up $dest -> $dest$backup_suffix"
                 mv "$dest" "$dest$backup_suffix"

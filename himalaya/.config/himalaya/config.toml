@@ -1,0 +1,32 @@
+# Himalaya (v2) config for Mail-in-a-Box at box.team-stingray.com
+# Password: first line of pass entry "box.team-stingray.com" (shared with vdirsyncer).
+# Create it with:  pass insert box.team-stingray.com
+
+display-name = "Maximillian Gaspers Scott"
+downloads-dir = "~/Downloads"
+
+[accounts.stingray]
+default = true
+email = "max@team-stingray.com"
+
+# Copy sent mail to the Sent mailbox (Mail-in-a-Box doesn't do it server-side)
+message.send.save-copy = "sent"
+
+# Mail-in-a-Box (Dovecot) default mailbox names. IMAP only reports the inbox
+# role, so the rest are mapped by hand.
+mailbox.alias.inbox = "INBOX"
+mailbox.alias.sent = "Sent"
+mailbox.alias.drafts = "Drafts"
+mailbox.alias.trash = "Trash"
+mailbox.alias.junk = "Spam"
+mailbox.alias.archive = "Archive"
+
+# Reading: IMAP, implicit TLS on 993
+imap.server = "imaps://box.team-stingray.com:993"
+imap.sasl.plain.username = "max@team-stingray.com"
+imap.sasl.plain.password.command = ["sh", "-c", "pass show box.team-stingray.com | head -n1"]
+
+# Sending: SMTP, implicit TLS on 465
+smtp.server = "smtps://box.team-stingray.com:465"
+smtp.sasl.plain.username = "max@team-stingray.com"
+smtp.sasl.plain.password.command = ["sh", "-c", "pass show box.team-stingray.com | head -n1"]
