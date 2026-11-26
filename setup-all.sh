@@ -37,3 +37,6 @@ cd "$(dirname "${BASH_SOURCE[0]}")" || exit 1
 . ./pass.sh
 . ./khal.sh
 . ./record-ascii.sh
+. ./cbonsai.sh
+. ./setup-linear.sh
+. ./chat.sh
