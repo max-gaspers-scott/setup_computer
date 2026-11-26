@@ -8,7 +8,7 @@ setup_khal() {
 
     if ! pass show box.team-stingray.com &> /dev/null; then
         echo "==> khal: pass entry 'box.team-stingray.com' missing; skipping sync."
-        echo "    Create it with: pass insert box.team-stingray.com"
+        echo "    Create it with: . ./pass.sh"
         echo "    Then re-run: . ./khal.sh"
         return 0
     fi
